@@ -29,6 +29,7 @@ nav {
   justify-content: space-between;
   background: var(--nav-color);
   padding: 5px 5%;
+  
   /* Posicao fixa */
   position: sticky;
   top: 0;
