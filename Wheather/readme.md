@@ -1,3 +1,3 @@
 <h2>The Wheather</h1> 
 
-<img src="images/wheather.png">
+<p>Find your country temp </p>
