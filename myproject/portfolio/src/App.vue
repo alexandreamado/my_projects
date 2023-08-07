@@ -1,72 +1,70 @@
 <template>
   <div>
     <!-- navbar -->
-    <div class="w-full shadow h-[70px] flex items-center">
-      <div class="w-full h-2/3 flex items-center justify-between mx-[2rem]">
-        <h1 class="text-4xl font-sans">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-10 h-10"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
-            />
-          </svg>
-        </h1>
-        <div class="flex gap-[1rem] h-full">
-          <ul class="flex gap-[4rem] w-full items-center p-0 m-0">
-            <li
-              class="cursor-pointer hover:border-b-2 border-indigo-500 transition-all inline-block"
+    <nav class="navbar  dark:bg-red-500">
+      <div class="nav-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="64"
+          height="64"
+          viewBox="0 0 64 64"
+        >
+          <path
+            d="M 3 10 C 2.625 10 2.2823281 10.209969 2.1113281 10.542969 C 1.9403281 10.876969 1.9695 11.275078 2.1875 11.580078 L 16.771484 32 L 2.1855469 52.419922 C 1.9675469 52.724922 1.938375 53.123031 2.109375 53.457031 C 2.281375 53.790031 2.625 54 3 54 L 12 54 C 12.323 54 12.6255 53.843078 12.8125 53.580078 L 27.8125 32.580078 C 28.0615 32.232078 28.0615 31.767922 27.8125 31.419922 L 12.8125 10.419922 C 12.6255 10.156922 12.323 10 12 10 L 3 10 z M 17 10 C 16.625 10 16.282328 10.209969 16.111328 10.542969 C 15.940328 10.876969 15.9695 11.275078 16.1875 11.580078 L 30.771484 32 L 16.185547 52.419922 C 15.967547 52.724922 15.938375 53.123031 16.109375 53.457031 C 16.281375 53.790031 16.625 54 17 54 L 26 54 C 26.323 54 26.6255 53.844031 26.8125 53.582031 L 36.5 40.021484 L 46.1875 53.580078 C 46.3745 53.843078 46.677 54 47 54 L 56 54 C 56.375 54 56.717672 53.790031 56.888672 53.457031 C 57.059672 53.123031 57.0305 52.724922 56.8125 52.419922 L 26.8125 10.419922 C 26.6255 10.156922 26.323 10 26 10 L 17 10 z M 4.9433594 12 L 11.484375 12 L 25.771484 32 L 11.484375 52 L 4.9433594 52 L 18.8125 32.580078 C 19.0615 32.232078 19.0615 31.767922 18.8125 31.419922 L 4.9433594 12 z M 18.943359 12 L 25.484375 12 L 54.056641 52 L 47.515625 52 L 37.3125 37.71875 C 36.9375 37.19375 36.060547 37.19375 35.685547 37.71875 L 25.484375 52 L 18.943359 52 L 32.8125 32.580078 C 33.0615 32.232078 33.0615 31.767922 32.8125 31.419922 L 18.943359 12 z M 43.652344 17.064453 C 43.099344 17.064453 42.652344 17.511453 42.652344 18.064453 L 42.652344 20.064453 C 42.652344 20.617453 43.099344 21.064453 43.652344 21.064453 C 44.205344 21.064453 44.652344 20.617453 44.652344 20.064453 L 44.652344 18.064453 C 44.652344 17.511453 44.205344 17.064453 43.652344 17.064453 z M 48.21875 17.064453 C 47.66575 17.064453 47.21875 17.511453 47.21875 18.064453 L 47.21875 20.064453 C 47.21875 20.617453 47.66575 21.064453 48.21875 21.064453 C 48.77175 21.064453 49.21875 20.617453 49.21875 20.064453 L 49.21875 18.064453 C 49.21875 17.511453 48.77175 17.064453 48.21875 17.064453 z M 52.78125 17.064453 C 52.22825 17.064453 51.78125 17.511453 51.78125 18.064453 L 51.78125 20.064453 C 51.78125 20.617453 52.22825 21.064453 52.78125 21.064453 C 53.33425 21.064453 53.78125 20.617453 53.78125 20.064453 L 53.78125 18.064453 C 53.78125 17.511453 53.33425 17.064453 52.78125 17.064453 z M 57.347656 17.064453 C 56.794656 17.064453 56.347656 17.511453 56.347656 18.064453 L 56.347656 20.064453 C 56.347656 20.617453 56.794656 21.064453 57.347656 21.064453 C 57.899656 21.064453 58.347656 20.617453 58.347656 20.064453 L 58.347656 18.064453 C 58.347656 17.511453 57.900656 17.064453 57.347656 17.064453 z M 40.201172 23 C 39.826172 23 39.4835 23.209969 39.3125 23.542969 C 39.1415 23.876969 39.170672 24.275078 39.388672 24.580078 L 43.673828 30.580078 C 43.860828 30.843078 44.163328 31 44.486328 31 L 61 31 C 61.553 31 62 30.553 62 30 L 62 24 C 62 23.447 61.553 23 61 23 L 40.201172 23 z M 42.144531 25 L 60 25 L 60 29 L 45.001953 29 L 42.144531 25 z M 48.058594 34 C 47.683594 34 47.340922 34.209969 47.169922 34.542969 C 46.998922 34.876969 47.028094 35.275078 47.246094 35.580078 L 51.53125 41.580078 C 51.71825 41.843078 52.022703 42 52.345703 42 L 61 42 C 61.553 42 62 41.553 62 41 L 62 35 C 62 34.447 61.553 34 61 34 L 48.058594 34 z M 50.001953 36 L 60 36 L 60 40 L 52.859375 40 L 50.001953 36 z"
+          ></path>
+        </svg>
+      </div>
+      <div class="nav-center">
+        <ul class="">
+          <li class="mr-5">
+            <a href="#" class="active-link">
+              <span class="text-lg">Home</span></a
             >
-              Home
-            </li>
-            <li
-              class="cursor-pointer hover:border-b-2 border-indigo-500 transition-all"
-            >
-              About
-            </li>
-            <li
-              class="cursor-pointer hover:border-b-2 border-indigo-500 transition-all"
-            >
-              Projects
-            </li>
-            <li class="cursor-pointer">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
-                />
-              </svg>
-            </li>
-          </ul>
-          <div class="w-[1px] bg-black"></div>
+          </li>
+          <li class="mr-5">
+            <a href="#"><span class="text-lg">Sobre</span></a>
+          </li>
+          <li class="mr-5">
+            <a href="#"><span class="text-lg">Projectos</span></a>
+          </li>
 
-          <button
-            class="w-full h-2/2 bg-gradient-to-r from-blue-300 to-indigo-500 rounded-lg p-[0.5rem]"
-          >
-            <p class="text-white">Baixar cv</p>
-            <p></p>
+          <li class="mr-5">
+            <a href="#"> <span class="text-lg">Contacto</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-righ">
+        <div class="flex gap-2 items-center">
+          <div class="grid place-content-center">
+              <input class="darkCheckbox" type="checkbox" v-model="isDark">
+          </div>
+
+          <hr class="w-8 rotate-90 bg-black" />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 24 24"
+              class="vt-locales-btn-icon"
+              data-v-bd3f9d28=""
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+                class="css-c4d79v"
+              ></path>
+            </svg>
           </button>
         </div>
       </div>
-    </div>
-
+    </nav>
     <!-- perfil menu -->
-    <div class="w-full h-[700px] bg-gradient-to-r from-blue-300 to-indigo-700">
+    <div
+      class="w-full h-[700px] bg-gradient-to-r from-blue-300 to-indigo-700 px-[4%]"
+    >
       <div
         class="flex items-center ml-[2rem] h-[300px] bg-white w-[60px] relative top-[15%] rounded-[8px] shadow-xl"
       >
@@ -146,7 +144,7 @@
       </div>
 
       <div class="relative left-[15rem] bottom-[10rem] w-max">
-        <p class="text-4xl text-dark mb-[10px]">Hi! meu nome é Alexandre</p>
+        <p class="text-4xl text-dark mb-[10px]">Ola! Meu nome é Alexandre</p>
         <h1 class="text-5xl font-semibold text-dark mb-[20px]">
           Desenvolvedor <span class="text-white">Front-End</span>
         </h1>
@@ -156,7 +154,7 @@
         </p>
         <button
           type="button"
-          class="inline-block mt-4 bg-white rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-dark shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+          class="bg-white p-[0.5rem] rounded-md mt-6 px-4 hover:bg-[#ccc] ease-in-out shadow-lg"
         >
           Baixar cv
         </button>
@@ -193,60 +191,32 @@
           interativas e responsivas.
         </p>
       </div>
-      <svg
-        class="border shadow-md"
-        viewBox="0 0 1351.68 675.84"
-        xmlns="http://www.w3.org/2000/svg"
-        preserveAspectRatio="none">
-        <rect
-          class="bg"
-          id="bg"
-          x="0"
-          y="0"
-          width="100%"
-          height="500"
-          fill="#ccc"
-        ></rect>
-        <g transform="rotate(206 675.84 337.92)">
-          <path
-            d="M -675.84 375.84 S -347.92 271.84
-            0.00 375.84 166.84 218.84
-            675.84 375.84 1003.76 359.84
-            1351.68 375.84 1679.60 340.84
-            2027.52 375.84 h 110 V 1275.8400000000001 H -675.84 Z"
-            fill="none"
-            stroke="#93C5FD "
-            stroke-width="10"
-          ></path>
-          <path
-            d="M -675.84 325.00 S -547.00 172.50
-            0.00 325.00 327.92 66.00
-            675.84 325.00 1003.76 172.50
-            1351.68 325.00 1555.52 172.50
-            2027.52 325.00 h 110 V -600 H -675.84 Z"
-            fill="none"
-            stroke="#4338ca"
-            stroke-width="10"
-          ></path>
-        </g>
-      </svg>
+
+      <div class="line"></div>
     </div>
 
     <!-- Projects -->
+    <div class="h-[800px] bg-gradient-to-r from-blue-300 to-indigo-700 px-[2%]">
+      <h1 class="text-center text-4xl py-6 text-white">Projects</h1>
+      <div class="grid grid-cols-3 w-[800px] m-auto gap-16">
+        <div class="w-[280px] h-[270px] bg-black"></div>
+        <div class="w-[280px] h-[270px] bg-black"></div>
+        <div class="w-[280px] h-[270px] bg-black"></div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script></script>
+<script setup>
+import { useDark } from "@vueuse/core";
+
+const isDark = useDark();
+</script>
 
 <style scoped>
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-
-/* .about {
-  position: relative;
-  top: 50%;
-} */
 
 .svg-container {
   position: relative;
@@ -263,5 +233,120 @@
   height: 300px;
   border-radius: 2px;
   box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 6px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-center ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.nav-center ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 5px 8px;
+
+  padding-right: 5px;
+
+  position: relative;
+}
+
+.nav-center ul li a img {
+  width: 30px;
+}
+
+.nav-center ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000;
+  position: absolute;
+
+  bottom: -12px;
+  transition: width 0.3s;
+}
+
+.nav-center ul li a:hover::after,
+.nav-center ul li a.active-link::after {
+  width: 100%;
+}
+
+.nav-profile-img {
+  width: 40px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.vt-locales-btn-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--vt-c-text-1);
+}
+
+.line {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #64b5f6 50%, #303f9f 50%);
+  background-size: 10px 10px; /* Tamanho dos quadrados de gradiente */
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1976d2 550%, #3f51b5 50%);
+  background-size: 10px 10px;
+  opacity: 0.5;
+}
+
+.darkCheckbox {
+  position: relative;
+  width: 80px;
+  height: 35px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ccc;
+  outline: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+}
+
+.darkCheckbox::before {
+  content: " ";
+  width: 40px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.darkCheckbox:checked::before {
+  transform: translateX(100%);
+  background: #fff;
 }
 </style>
