@@ -1,0 +1,34 @@
+<template>
+  <GuestHeader label="Sign In"></GuestHeader>
+
+  <ParentTransition appear :visibility="true">
+    <div class="space-y-6">
+      <BaseInput type="text" name="email" label="Email or Username" autofocus />
+
+      <BaseInput type="password" name="password" label="Password" />
+
+      <div class="flex items-center justify-between">
+        <BaseCheckbox
+          name="rememberMe"
+          id="rememberMe"
+          label="Remember Me"
+        ></BaseCheckbox>
+
+        <BaseLink to="Password">Forgive you Password</BaseLink>
+      </div>
+
+      <BaseButton @click="router.push({ name: 'Dashboard' })" block
+        >Login</BaseButton>
+
+      <div class="flex items-center justify-center">
+        <BaseLink to="Register">Create You Account</BaseLink>
+      </div>
+    </div>
+  </ParentTransition>
+</template>
+
+<script setup>
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+</script>
