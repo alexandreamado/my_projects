@@ -20,8 +20,7 @@
         <ul class="">
           <li class="mr-5">
             <a href="#" class="active-link">
-              <span class="text-lg">Home</span></a
-            >
+              <span class="text-lg">Home</span></a>
           </li>
           <li class="mr-5">
             <a href="#"><span class="text-lg">Sobre</span></a>
@@ -63,11 +62,9 @@
     </nav>
     <!-- perfil menu -->
     <div
-      class="w-full h-[700px] bg-gradient-to-r from-blue-300 to-indigo-700 px-[4%]"
-    >
+      class="w-full h-[700px] bg-gradient-to-r from-blue-300 to-indigo-700 px-[4%] grid grid-cols-3">
       <div
-        class="flex items-center ml-[2rem] h-[300px] bg-white w-[60px] relative top-[15%] rounded-[8px] shadow-xl"
-      >
+        class="flex items-center ml-[2rem] h-[300px] bg-white w-[60px] relative top-[15%] rounded-[8px] shadow-xl">
         <ul class="flex flex-col justify-center items-center gap-[2rem] w-full">
           <li>
             <svg
@@ -143,9 +140,9 @@
         </ul>
       </div>
 
-      <div class="relative left-[15rem] bottom-[10rem] w-max">
+      <div class="relative top-[15%] right-[20rem] w-full">
         <p class="text-4xl text-dark mb-[10px]">Ola! Meu nome é Alexandre</p>
-        <h1 class="text-5xl font-semibold text-dark mb-[20px]">
+        <h1 class="text-5xl font-semibold text-dark mb-[20px] w-[600px]">
           Desenvolvedor <span class="text-white">Front-End</span>
         </h1>
         <p class="text-2xl w-[750px] text-dark">
@@ -160,7 +157,7 @@
         </button>
       </div>
 
-      <div class="relative left-[70rem] -top-[25rem] w-max">
+      <div class="">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="410"

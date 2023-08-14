@@ -13,38 +13,39 @@
             'justify-between': hasChild(navigation),
           }"
         >
-          <div @click="showToogleMenuOne">
+          <div>
             <span>
               <i class="mr-3 shrink-0 w-6" :class="navigation.icon"></i>
             </span>
             <span>{{ navigation.label }}</span>
           </div>
-          <span v-if="hasChild(navigation)" >
+          <span v-if="hasChild(navigation)">
             <i
-              class="mr-3 shrink-0 w-6 fas fa-chevron-right"
-              v-if="navigation.active"
+              class="mr-3 shrink-0 w-6"
+              :class="{
+                'fas fa-chevron-right': !navigation.active,
+                'fas fa-chevron-down': navigation.active,
+              }"
             ></i>
-            <i class="mr-3 shrink-0 w-6 fas fa-chevron-down" v-else></i>
           </span>
         </div>
       </div>
 
-      <div v-if="hasChild(navigation)">
-        <ul v-if="toogleMenuOne">
-          <li
-            class="text-black hover:text-white dark:text-white hover:bg-darken-primary dark:hover:bg-black cursor-pointer"
-            v-for="child in navigation.children"
-            :key="child.name"
-          >
-            <div class="pl-10 pr-2 py-2 flex items-center" >
-              <span>
-                <i class="mr-3 shrink-0 w-4" :class="child.icon"></i>
-              </span>
-              <span>{{ child.label }}</span>
-            </div>
-          </li>
-        </ul>
-      </div>
+      <ul v-if="navigation.active">
+        <li
+          class="text-black hover:text-white dark:text-white hover:bg-darken-primary dark:hover:bg-black cursor-pointer"
+          v-for="child in navigation.children"
+          :key="child.name"
+          @click="clickChild(child)"
+        >
+          <div class="pl-10 pr-2 py-2 flex items-center">
+            <span>
+              <i class="mr-3 shrink-0 w-4" :class="child.icon"></i>
+            </span>
+            <span>{{ child.label }}</span>
+          </div>
+        </li>
+      </ul>
     </li>
   </ul>
 </template>
@@ -57,14 +58,8 @@ export default {
 
 <script setup>
 import { useRouter } from "vue-router";
-import { ref } from "vue";
 
 const router = useRouter();
-const toogleMenuOne = ref(false);
-
-const showToogleMenuOne = () => {
-  toogleMenuOne.value = !toogleMenuOne.value;
-};
 
 const navigations = [
   {
@@ -74,28 +69,15 @@ const navigations = [
     path: "Dashboard",
   },
   {
-    icon: "fas fa-table",
-    label: "Table",
-    name: "Table",
-    path: "Table",
-  },
-
-  {
     icon: "fas fa-user",
     label: "User",
     active: true,
     children: [
       {
-        icon: "fa-solid fa-chalkboard-user",
-        label: "Teacher",
-        name: "Teacher",
+        icon: "fas fa-user",
+        label: "user",
+        name: "Table",
         path: "Table",
-      },
-
-      {
-        icon: "fa-solid fa-graduation-cap",
-        label: "teacher",
-        name: "teacher",
       },
       {
         icon: "fa-solid fa-book",
@@ -132,6 +114,13 @@ const hasChild = (navigation) => {
   return navigation.hasOwnProperty("children") && navigation.children.length > 0
     ? true
     : false;
+};
+
+// ...
+const clickChild = (child) => {
+  if (hasPath(child)) {
+    router.push({ name: child.path });
+  }
 };
 
 const isActive = (navigation) => {

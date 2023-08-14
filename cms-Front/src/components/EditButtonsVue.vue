@@ -3,10 +3,10 @@
         <a href="`/users/${id}/edit`" class="text-indigo-500">
             <i class="fa fa-eye"></i>
         </a>
-        <a href="`/users/${id}/edit`" class="text-indigo-500">
+        <a href="`/users/${id}/edit`" class="text-green-500">
             <i class="fa fa-edit"></i>
         </a>
-        <a href="`/users/${id}/edit`" class="text-indigo-500">
+        <a href="`/users/${id}/edit`" class="text-red-500">
             <i class="fa fa-trash"></i>
         </a>
     </div>
