@@ -4,17 +4,17 @@
       <h1 class="text-2xl font-bold text-main mb-2">Alexandre Amado</h1>
       <img
         src="../../assets/logo.png"
-        class="w-32 rounded-full border-[1px]"
+        class="w-32 rounded-full border-[1px] border-[#ccc]"
         alt="Avatar"
       />
       <p class="text-center text-sm text-main mt-2 px-2">
-        Olá, meu nome é Alexandre Amado e sou Desenvolvedor Front-End & Tecnico de Suporte IBM.
-        Bem vindo ao meu site pessoal!
+        Olá, meu nome é Alexandre Amado e sou Desenvolvedor Front-End & Tecnico
+        de Suporte IBM. Bem vindo ao meu site pessoal!
       </p>
     </div>
 
     <ul
-      class="flex justify-center items-center gap-6 mt-4 border-b-[1px] border-[#ccc] py-2"
+      class="flex justify-center items-center gap-6 mt-4  py-2"
     >
       <li>
         <a href="#"
