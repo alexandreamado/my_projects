@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[280px] bg-primary h-full fixed">
+  <div class="w-[280px] bg-primary h-full fixed dark:border-r-2">
     <div class="flex flex-col justify-center items-center mt-8">
       <h1 class="text-2xl font-bold text-main mb-2">Alexandre Amado</h1>
       <img

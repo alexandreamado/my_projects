@@ -2,10 +2,10 @@
   <div class="px-[12%] py-[3%]">
     <div class="flex flex-col gap-6">
       <div class="flex items-center gap-2">
-        <div class="border-l-4 border-primary h-6"></div>
-        <h1 class="text-2xl font-bold">OQUE EU FAÇO</h1>
+        <div class="border-l-4 border-primary h-6 dark:border-white"></div>
+        <h1 class="text-2xl font-bold dark:text-white">OQUE EU FAÇO</h1>
       </div>
-      <p>
+      <p class="dark:text-white">
         I have more than 10 years' experience building software for clients all
         over the world. Below is a quick overview of my main technical skill
         sets and technologies I use. Want to find out more about my experience?
@@ -18,15 +18,35 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          class="w-8 h-8"
+          class="w-8 h-8 dark:bg-white"
           fill="#111821"
         >
           <path
             d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
           />
         </svg>
-        <h2 class="font-bold">Vanilla Javscript</h2>
-        <p>
+        <h2 class="font-bold dark:text-white">Vanilla Javscript</h2>
+        <p class="dark:text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+          blanditiis, tempora praesentium sapiente libero perferendis dolorem
+          ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
+          rerum. Nulla?
+        </p>
+      </div>
+      
+      <div class="flex flex-col w-[306px] mt-12 gap-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          class="w-8 h-8 dark:bg-white"
+          fill="#111821"
+        >
+          <path
+            d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
+          />
+        </svg>
+        <h2 class="font-bold dark:text-white">Vanilla Javscript</h2>
+        <p class="dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At
           blanditiis, tempora praesentium sapiente libero perferendis dolorem
           ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
@@ -37,15 +57,15 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          class="w-8 h-8"
+          class="w-8 h-8 dark:bg-white"
           fill="#111821"
         >
           <path
             d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
           />
         </svg>
-        <h2 class="font-bold">Vanilla Javscript</h2>
-        <p>
+        <h2 class="font-bold dark:text-white">Vanilla Javscript</h2>
+        <p class="dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At
           blanditiis, tempora praesentium sapiente libero perferendis dolorem
           ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
@@ -56,15 +76,15 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          class="w-8 h-8"
+          class="w-8 h-8 dark:bg-white"
           fill="#111821"
         >
           <path
             d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
           />
         </svg>
-        <h2 class="font-bold">Vanilla Javscript</h2>
-        <p>
+        <h2 class="font-bold dark:text-white">Vanilla Javscript</h2>
+        <p class="dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At
           blanditiis, tempora praesentium sapiente libero perferendis dolorem
           ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
@@ -75,15 +95,15 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          class="w-8 h-8"
+          class="w-8 h-8 dark:bg-white"
           fill="#111821"
         >
           <path
             d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
           />
         </svg>
-        <h2 class="font-bold">Vanilla Javscript</h2>
-        <p>
+        <h2 class="font-bold dark:text-white">Vanilla Javscript</h2>
+        <p class="dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At
           blanditiis, tempora praesentium sapiente libero perferendis dolorem
           ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
@@ -94,43 +114,26 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-          class="w-8 h-8"
+          class="w-8 h-8 dark:bg-white"
           fill="#111821"
         >
           <path
             d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
           />
         </svg>
-        <h2 class="font-bold">Vanilla Javscript</h2>
-        <p>
+        <h2 class="font-bold dark:text-white">Vanilla Javscript</h2>
+        <p class="dark:text-white">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. At
           blanditiis, tempora praesentium sapiente libero perferendis dolorem
           ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
           rerum. Nulla?
         </p>
       </div>
-      <div class="flex flex-col w-[306px] mt-12 gap-4">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-          class="w-8 h-8"
-          fill="#111821"
-        >
-          <path
-            d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"
-          />
-        </svg>
-        <h2 class="font-bold">Vanilla Javscript</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-          blanditiis, tempora praesentium sapiente libero perferendis dolorem
-          ipsam enim ducimus vero placeat odit eum dolor amet omnis modi velit
-          rerum. Nulla?
-        </p>
-      </div>
+     
+     
     </div>
     <div class="flex justify-center">
-      <button class="bg-primary p-2 rounded-md text-white font-bold mt-4 mb-6">
+      <button class="bg-primary p-2 rounded-md dark:bg-[#434343] text-white font-bold mt-4 mb-6">
         Serviços & Preços
       </button>
     </div>
