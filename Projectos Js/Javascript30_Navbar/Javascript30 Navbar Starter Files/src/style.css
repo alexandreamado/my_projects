@@ -118,6 +118,19 @@ main {
     align-items: center;
 }
 
+.nav-toogle {
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 6rem;
+    left: 36rem;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
 footer {
     display: flex;
     flex-direction: column;
@@ -131,4 +144,4 @@ footer ul {
     display: flex;
     gap: 2rem;
     margin-top: 40px;
-}
+} 
