@@ -1,15 +1,20 @@
 <template>
-  <div class="flex flex-col justify-center">
-    <div class="flex items-center gap-2 justify-center mt-6">
-      <i class="fa fa-sun text-white"></i>
+  <div class="flex items-center justify-center gap-4 mr-14">
+    <div class="flex items-center gap-2 mt-6">
       <h1 class="text-white font-bold">Dark Mode</h1>
     </div>
-    <div class="flex items-center gap-2 justify-center mt-6">
+    <div class="mt-6">
       <button
         @click="toggleDark()"
-        class="py-2 px-4 bg-black text-white rounded-md dark:bg-white dark:text-black"
+        class="w-[60px] bg-black text-white rounded-md dark:bg-white dark:text-black"
       >
-      <span class="ml-2">{{ isDark ? 'Dark' : 'Light' }}</span>
+        <span
+          :class="[
+            isDark
+              ? 'fa fa-sun text-2xl text-center'
+              : 'fa fa-moon text-2xl text-center',
+          ]"
+        ></span>
       </button>
     </div>
   </div>
