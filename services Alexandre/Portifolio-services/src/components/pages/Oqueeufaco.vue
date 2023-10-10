@@ -257,9 +257,7 @@
         <div class="dark:bg-white dark:rounded-full dark:p-1 w-max">
           <img src="../../assets/img/rede.png" width="42" alt="" />
         </div>
-        <h2
-          class="font-bold text-lg dark:text-white border-b-[1px] border-[#222] dark:border-white"
-        >
+        <h2 class="font-bold text-lg dark:text-white border-b-[1px] border-[#222] dark:border-white">
           Configuração de redes de Computadores
         </h2>
         <ul class="list-square" v-for="list in newtwork" :key="list">
