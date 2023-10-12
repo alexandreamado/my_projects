@@ -1,9 +1,10 @@
 <template>
   <div class="mt-16 flex flex-col gap-4 px-4 ml-8 border-l-[1px] border-white">
-    <button
+    <router-link
       @click="activateMenuItem(0)"
       :class="{ active: activeItem === 0 }"
       class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
+      to="/sobreme"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,36 +22,35 @@
       </svg>
 
       <p class="text-[14px] font-bold">Sobre mim</p>
-    </button>
-    <router-link to="/portfolio">
-      <button
-        @click="activateMenuItem(1)"
-        :class="{ active: activeItem === 1 }"
-        class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
-          />
-        </svg>
-
-        <p class="text-[14px] font-bold">Portfolio</p>
-      </button>
     </router-link>
-    <button
+    <router-link
+      @click="activateMenuItem(1)"
+      :class="{ active: activeItem === 1 }"
+      to="/portfolio"
+      class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"
+        />
+      </svg>
+      <p class="text-[14px] font-bold">Portfolio</p>
+    </router-link>
+    <router-link 
       @click="activateMenuItem(2)"
       :class="{ active: activeItem === 2 }"
       class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
-    >
+      to="/servicos"
+      >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -72,13 +72,14 @@
       </svg>
 
       <p class="text-[14px] font-bold">Serviços</p>
-    </button>
+    </router-link>
 
-    <button
+    <router-link
       @click="activateMenuItem(3)"
       :class="{ active: activeItem === 3 }"
       class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
-    >
+      to="/resume"
+      >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -95,7 +96,7 @@
       </svg>
 
       <p class="text-[14px] font-bold">Resumo</p>
-    </button>
+    </router-link>
     <button
       @click="activateMenuItem(4)"
       :class="{ active: activeItem === 4 }"

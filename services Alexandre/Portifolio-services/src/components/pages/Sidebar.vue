@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[280px] bg-[#1E2A3A] h-full fixed">
+  <div class="w-[300px] bg-[#1E2A3A] h-full fixed">
     <div class="flex flex-col justify-center items-center mt-8">
       <img
         src="../../assets/logo.png"

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[12%] py-[3%]">
+  <div class="px-[16%] py-[3%]">
     <div class="flex flex-col gap-6">
       <div class="flex items-center gap-6 mb-6 dark:border-white w-full">
         <div class="flex items-center mb-4 gap-8">

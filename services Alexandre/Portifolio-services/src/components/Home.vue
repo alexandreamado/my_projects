@@ -1,17 +1,14 @@
 <template>
   <div class="flex">
-    <div class="w-[280px]">
+    <div class="w-[300px]">
       <Sidebar />
     </div>
     <div class="flex-grow">
-      <!-- <Sobreme /> -->
-      <Portfolio/>
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script setup>
 import Sidebar from "./pages/Sidebar.vue";
-import Sobreme from "./Sobreme.vue";
-import Portfolio from "./pages/Portfolio.vue";
 </script>

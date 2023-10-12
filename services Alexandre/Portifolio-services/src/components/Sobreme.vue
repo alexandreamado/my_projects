@@ -1,7 +1,7 @@
 <template>
   <div class="h-[100vh] dark:bg-[#030608]">
     <div class="flex flex-col dark:bg-primary">
-      <div class="bg-header dark:bg-primary w-full px-[12%] py-[6%] shadow-sm border-b-[1px] border-[#ccc]">
+      <div class="bg-header dark:bg-primary w-full px-[16%] py-[6%] shadow-sm border-b-[1px] border-[#ccc]">
         <h1 class="text-large font-bold dark:text-white">Alexandre Amado</h1>
         <h2 class="text-medio font-normal dark:text-white">
           Desenvolvedor Front-End & Tecnico de Suporte IBM

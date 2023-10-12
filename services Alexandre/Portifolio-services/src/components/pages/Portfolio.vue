@@ -8,9 +8,7 @@
         Seja bem-vindo ao meu Portfólio, aqui você encontrara os meus mais
         recentes Projectos.
       </p>
-      <button
-        class="bg-primary text-white h-[40px] w-[126px] p-[6px] rounded-lg mt-6 flex items-center justify-between hover:bg-[#334155] transition-all duration-300 ease-in"
-      >
+      <button class="bg-primary text-white h-[40px] w-[126px] p-[6px] rounded-lg mt-6 flex items-center justify-between hover:bg-[#334155] transition-all duration-300 ease-in">
         <i class="fab fa-telegram text-white text-xl"></i>
         <p class="text-sm font-bold">Contrate-me</p>
       </button>
