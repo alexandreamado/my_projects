@@ -11,8 +11,8 @@
         <span
           :class="[
             isDark
-              ? 'fa fa-sun text-2xl text-center'
-              : 'fa fa-moon text-2xl text-center',
+              ? 'fa fa-sun text-xl text-center'
+              : 'fa fa-moon text-xl text-center',
           ]"
         ></span>
       </button>

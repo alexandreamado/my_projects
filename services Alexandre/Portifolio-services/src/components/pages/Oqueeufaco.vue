@@ -1,15 +1,21 @@
 <template>
   <div class="px-[12%] py-[3%]">
     <div class="flex flex-col gap-6">
-      <div
-        class="flex items-center gap-6 mb-6 border-b-2 border-primary dark:border-white w-max"
-      >
+      <div class="flex items-center gap-6 mb-6 dark:border-white w-full">
         <div class="flex items-center mb-4 gap-8">
-          <Button class="font-bold dark:text-white" @click="showFrontEnd">
-            Front-End
+          <Button
+            :class="{ active: activeItem === 1 }"
+            class="hover:scale-105 shadow-lg dark:text-white border-[1px] cursor-pointer duration-500 text-center text-lg hover:bg-primary hover:text-white border-[#ccc] bg-transparent p-2 rounded-lg w-[150px]"
+            @click="showFrontEnd"
+          >
+            <p class="text-sm font-bold">Front-End</p>
           </Button>
-          <Button class="dark:text-white" @click="showSupport">
-            Técnico de Computadores
+          <Button
+            :class="{ active: activeItem === 1 }"
+            class="hover:scale-105 shadow-lg dark:text-white border-[1px] cursor-pointer duration-500 text-center text-lg hover:bg-primary hover:text-white border-[#ccc] bg-transparent p-2 rounded-lg w-max"
+            @click="showSupport"
+          >
+            <p class="text-sm font-bold">Técnico de Computadores</p>
           </Button>
         </div>
       </div>
@@ -22,7 +28,7 @@
         ansioso para expandir minha carreira na área. Abaixo está uma rápida
         visão geral dos meus principais conjuntos de habilidades técnicas e
         tecnologias que utilizo. Para saber mais sobre minha experiência,
-        confira meu currículo online e portfólio de projetos
+        confira meu currículo online e portfólio de projetos.
       </p>
 
       <p class="dark:text-white" v-if="hiddenSupport">
@@ -224,44 +230,40 @@
         class="flex flex-col mt-12 gap-4 p-4 rounded-md shadow-lg bg-header dark:bg-black"
       >
         <div class="dark:bg-white dark:rounded-full dark:p-1 w-max">
-          <img src="../../assets/img/pc.png" width="42" alt="" />
+          <img src="../../assets/img/pc.png" width="38" alt="" />
         </div>
-        <h2
-          class="font-bold text-lg dark:text-white border-b-[1px] border-[#222] dark:border-white"
-        >
+        <h2 class="font-bold dark:text-white">
           Montagem & Reparação de Computadores
         </h2>
 
         <ul class="list-square" v-for="list in lista" :key="list">
-          <li class="dark:text-white ml-4 text-lg">{{ list.nome }}</li>
+          <li class="dark:text-white ml-4">{{ list.nome }}</li>
         </ul>
       </div>
       <div
         class="flex flex-col mt-12 gap-4 p-4 rounded-md shadow-lg bg-header dark:bg-black"
       >
         <div class="dark:bg-white dark:rounded-full dark:p-1 w-max">
-          <img src="../../assets/img/printe.png" width="42" alt="" />
+          <img src="../../assets/img/printe.png" width="38" alt="" />
         </div>
-        <h2
-          class="font-bold dark:text-white text-lg border-b-[1px] border-[#222] dark:border-white"
-        >
+        <h2 class="font-bold dark:text-white">
           Instalação e configuração de Impressoras
         </h2>
         <ul class="list-square" v-for="list in impressora" :key="list">
-          <li class="dark:text-white ml-4 text-lg">{{ list.nome }}</li>
+          <li class="dark:text-white ml-4">{{ list.nome }}</li>
         </ul>
       </div>
       <div
         class="flex flex-col mt-12 gap-4 p-4 rounded-md shadow-lg bg-header dark:bg-black"
       >
         <div class="dark:bg-white dark:rounded-full dark:p-1 w-max">
-          <img src="../../assets/img/rede.png" width="42" alt="" />
+          <img src="../../assets/img/rede.png" width="38" alt="" />
         </div>
-        <h2 class="font-bold text-lg dark:text-white border-b-[1px] border-[#222] dark:border-white">
+        <h2 class="font-bold dark:text-white">
           Configuração de redes de Computadores
         </h2>
         <ul class="list-square" v-for="list in newtwork" :key="list">
-          <li class="dark:text-white ml-4 text-lg">{{ list.nome }}</li>
+          <li class="dark:text-white ml-4">{{ list.nome }}</li>
         </ul>
       </div>
       <div
@@ -312,6 +314,7 @@ export default {
     return {
       hiddenFront: true,
       hiddenSupport: false,
+      activeItem: null,
 
       lista: [
         { nome: "Especializado em instalação " },
@@ -345,6 +348,17 @@ export default {
       this.hiddenSupport = true;
       this.hiddenFront = false;
     },
+    activateMenuItem(index) {
+      this.activeItem = index;
+    },
   },
 };
 </script>
+
+<style scoped>
+.active {
+  background-color: #111821;
+  color: #fff;
+  border-radius: 8px;
+}
+</style>
