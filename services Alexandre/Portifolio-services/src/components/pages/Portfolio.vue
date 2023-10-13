@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="bg-header pt-[48px] pb-[48px] flex flex-col justify-center items-center"
+      class=" pt-[48px] pb-[48px] flex flex-col justify-center items-center shadow-md"
     >
-      <h1 class="text-large font-bold">Portfólio</h1>
-      <p class="text-lg">
+      <h1 class="text-4xl font-bold">Portfólio</h1>
+      <p class="text-lg mt-4">
         Seja bem-vindo ao meu Portfólio, aqui você encontrara os meus mais
         recentes Projectos.
       </p>
@@ -23,9 +23,9 @@
       </li>
     </ul>
 
-    <div class="grid grid-cols-2 gap-[42px] max-w-[1520px] mt-8 mx-auto">
+    <div class="grid grid-cols-2 gap-[42px] max-w-[1420px] mt-8 mx-auto">
       <div
-        class="w-[750px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
+        class="w-[700px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
       >
         <img
           src="../../assets/img/netflix.png"
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div
-        class="w-[750px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
+        class="w-[700px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
       >
         <img
           src="../../assets/img/netflix.png"
@@ -61,7 +61,7 @@
         </div>
       </div>
       <div
-        class="w-[750px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
+        class="w-[700px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
       >
         <img
           src="../../assets/img/netflix.png"
@@ -79,7 +79,7 @@
         </div>
       </div>
       <div
-        class="w-[750px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
+        class="w-[700px] bg-header shadow-xl flex rounded-lg hover:scale-105 hover:translate-y-2 duration-500 ease-in cursor-pointer hover:brightness-75"
       >
         <img
           src="../../assets/img/netflix.png"

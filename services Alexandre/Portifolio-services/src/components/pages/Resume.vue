@@ -1,12 +1,10 @@
 <template>
   <div>
     <div
-      class="bg-header pt-[48px] pb-[48px] flex flex-col justify-center items-center"
-    >
-      <h1 class="text-large font-bold">Resumo</h1>
+      class=" shadow-md pt-[48px] pb-[48px] flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold">Resumo</h1>
       <button
-        class="dark:bg-[#434343] flex items-center gap-2 bg-[#1E2A3A] p-2 rounded-lg"
-      >
+        class="mt-4 dark:bg-[#434343] flex items-center gap-2 bg-[#1E2A3A] p-2 rounded-lg">
         <svg
           class="svg-inline--fa fa-file-pdf me-2 w-6 h-6"
           aria-hidden="true"
@@ -16,8 +14,7 @@
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          data-fa-i2svg=""
-        >
+          data-fa-i2svg="">
           <path
             fill="#fff"
             d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"
@@ -130,12 +127,31 @@
           nuvem e bancos de dados.
         </p>
       </div>
-      <div class="grid grid-cols-2 mt-6">
+      <div class="mt-6 flex justify-between">
         <div class="ml-6">
-          <h1 class="text-2xl font-bold">Experiência</h1>
+          <h1 class="text-3xl font-bold">Experiência</h1>
+          <div>
+            <div class="flex gap-8 items-center">
+              <h1 class="font-bold mt-4">
+                Desenvolvedor Front-End na North Star Developer's Village
+                (NSDevil)
+              </h1>
+              <p class="text-sm">Fev 2023 - Out 2023</p>
+            </div>
+            <p class="mt-4 text-sm">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              corrupti, dicta facere ut officiis sunt neque voluptate sequi
+              impedit error doloremque labore voluptatibus facilis numquam
+              debitis iste reprehenderit repellendus ad.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
+              corrupti, dicta facere ut officiis sunt neque voluptate sequi
+              impedit error doloremque labore voluptatibus facilis numquam
+              debitis iste reprehenderit repellendus ad.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2>Nome</h2>
+        <div class="mr-[6rem] border-l-[1px] h-screen p-2">
+          <h1 class="font-bold text-xl">Habilidades</h1>
         </div>
       </div>
     </div>

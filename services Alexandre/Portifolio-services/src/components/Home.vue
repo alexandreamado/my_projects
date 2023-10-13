@@ -1,9 +1,9 @@
 <template>
-  <div class="flex">
-    <div class="w-[300px]">
+  <div class="flex flex-row">
+    <div class="basis-[300px]">
       <Sidebar />
     </div>
-    <div class="flex-grow">
+    <div class="basis-full">
       <router-view></router-view>
     </div>
   </div>
@@ -12,3 +12,9 @@
 <script setup>
 import Sidebar from "./pages/Sidebar.vue";
 </script>
+
+<style>
+* {
+  font-family: "Roboto", sans-serif;
+}
+</style>

@@ -1,12 +1,12 @@
 <template>
   <div class="h-[100vh] dark:bg-[#030608]">
     <div class="flex flex-col dark:bg-primary">
-      <div class="bg-header dark:bg-primary w-full px-[16%] py-[6%] shadow-sm border-b-[1px] border-[#ccc]">
+      <div class="dark:bg-primary w-full  py-[4%] px-[12rem] shadow-md">
         <h1 class="text-large font-bold dark:text-white">Alexandre Amado</h1>
-        <h2 class="text-medio font-normal dark:text-white">
+        <h2 class="text-xl dark:text-white font-normal">
           Desenvolvedor Front-End & Tecnico de Suporte IBM
         </h2>
-        <p class="w-[746px] mt-4 dark:text-white">
+        <p class="w-[860px] text-lg mt-4 dark:text-white font-light">
           Sou um Profissional de Suporte Técnico com formação pela IBM,
           combinando conhecimentos técnicos sólidos com experiência em
           desenvolvimento web. Possuo um amplo espectro de habilidades, desde a

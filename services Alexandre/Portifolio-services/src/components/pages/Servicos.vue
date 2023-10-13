@@ -1,10 +1,10 @@
 <template>
   <div>
     <div
-      class="bg-header pt-[48px] pb-[48px] flex flex-col justify-center items-center"
+      class="shadow-md pt-[48px] pb-[48px] flex flex-col justify-center items-center"
     >
-      <h1 class="text-large font-bold">Meus Serviços</h1>
-      <p class="text-center w-[1200px]">
+      <h1 class="text-4xl font-bold">Meus Serviços</h1>
+      <p class="text-center w-[980px] mt-4">
         Tenho 1 ano de experiência em desenvolvimento de software para a Web.
         Pode consultar o meu portfólio de projectos e o meu currículo online
         para saber mais sobre as minhas competências e experiências. Atualmente,
