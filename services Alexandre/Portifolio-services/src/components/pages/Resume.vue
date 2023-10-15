@@ -1,10 +1,14 @@
 <template>
   <div>
     <div
-      class=" shadow-md pt-[48px] pb-[48px] flex flex-col justify-center items-center">
+      class="shadow-md pt-[48px] pb-[48px] flex flex-col justify-center items-center"
+    >
       <h1 class="text-4xl font-bold">Resumo</h1>
-      <button
-        class="mt-4 dark:bg-[#434343] flex items-center gap-2 bg-[#1E2A3A] p-2 rounded-lg">
+      <a
+        href="./../../docs/Alexandre.pdf"
+        download
+        class="mt-4 dark:bg-[#434343] flex items-center gap-2 bg-[#1E2A3A] p-2 rounded-lg"
+      >
         <svg
           class="svg-inline--fa fa-file-pdf me-2 w-6 h-6"
           aria-hidden="true"
@@ -14,14 +18,15 @@
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          data-fa-i2svg="">
+          data-fa-i2svg=""
+        >
           <path
             fill="#fff"
             d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V304H176c-35.3 0-64 28.7-64 64V512H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM176 352h32c30.9 0 56 25.1 56 56s-25.1 56-56 56H192v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V448 368c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H192v48h16zm96-80h32c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H304c-8.8 0-16-7.2-16-16V368c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H320v96h16zm80-112c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H448v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V432 368z"
           ></path>
         </svg>
         <p class="text-white font-bold">Baixar versão em PDF</p>
-      </button>
+      </a>
     </div>
 
     <div
@@ -128,30 +133,222 @@
         </p>
       </div>
       <div class="mt-6 flex justify-between">
-        <div class="ml-6">
+        <div class=" px-3">
           <h1 class="text-3xl font-bold">Experiência</h1>
           <div>
-            <div class="flex gap-8 items-center">
+            <div class="flex gap-8 items-center justify-between">
               <h1 class="font-bold mt-4">
                 Desenvolvedor Front-End na North Star Developer's Village
                 (NSDevil)
               </h1>
               <p class="text-sm">Fev 2023 - Out 2023</p>
             </div>
-            <p class="mt-4 text-sm">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
-              corrupti, dicta facere ut officiis sunt neque voluptate sequi
-              impedit error doloremque labore voluptatibus facilis numquam
-              debitis iste reprehenderit repellendus ad.
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis
-              corrupti, dicta facere ut officiis sunt neque voluptate sequi
-              impedit error doloremque labore voluptatibus facilis numquam
-              debitis iste reprehenderit repellendus ad.
-            </p>
+            <ul class="list-square w-[750px] ml-6">
+              <li>
+                Engenheiro Front-End na empresa North Star Developer's Village
+                (NSDevil) especializado em Vuejs, Javascript, HTML, CSS tailwind
+                CSS uso de ferramenta axios para o estabelecimento de Requisição
+                entre o Front-End e o Back-End.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Formador voluntario na empresa vodacom no Programa Code like a
+                Girl
+              </h1>
+              <p class="text-sm">Dez 2022</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>
+                Capacitação de estudantes na área de tecnologias de informação,
+                usando as mais recentes tecnologias (HTML, CSS e JAVASCRIPT e
+                UX)
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">Consultor Independente | Freelance</h1>
+              <p class="text-sm">Jan 2017 - Presente</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>
+                Prestação de serviços de assistência técnica de TIC’s,
+                fornecendo suporte, manutenção e configuração de computadores,
+                sistemas operativos, impressoras, dispositivos e conexões
+                (cablagem) de redes;
+              </li>
+              <li>
+                Prestação de serviços de desenvolvimento de websites e design de
+                interfaces (UI).
+              </li>
+            </ul>
+          </div>
+
+          <h1 class="text-3xl font-bold mt-4">Educação e Formação</h1>
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Pós-graduação em Metodologia de Ensino e Aprendizagem
+              </h1>
+              <p class="text-sm">Fev 2023 - Julho 2023</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>Universidade Licungo</li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">Universidade Licungo</h1>
+              <p class="text-sm">Jan 2017 - 2021</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>
+                Licenciatura em Informática com habilitação em Engenharia de
+                Redes
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                CCNA Routing and Switching: Introduction to Networks
+              </h1>
+              <p class="text-sm">Dez 2019</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>
+                Formação e Certificação técnica de Associado em Tecnologias de
+                Informação e Comunicação para Routing & Switching (Cisco
+                Networking Academy)
+              </li>
+              <li>
+                Configuração de ferramentas de monitoramento disponíveis para
+                redes de empresas de pequeno e médio porte.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Formação em Instalação e Reparação de Redes de Computadores
+              </h1>
+              <p class="text-sm">Nov 2020</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>Sistemas Operacionais</li>
+              <li>Seguranca na rede</li>
+              <li>Montagem e manuntecao de computadores</li>
+              <li>Infraestrutura Web</li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                FreeCodeCamp (Desenvolvedor Front-End)
+              </h1>
+              <p class="text-sm">Junh 2021</p>
+            </div>
+
+            <ul class="list-square w-[750px] ml-6">
+              <li>
+                Conhecimentos sólidos das Tecnologias HTML5 and CSS3 para
+                estruturar o conteúdo de websites.
+              </li>
+              <li>
+                Compressão aprofundada dos principiops de design responsivo e
+                capacidade de criar layouts adaptáveis a diferentes dispositivos
+                e tamanho de tela.
+              </li>
+              <li>
+                Conhecimento de praticas de acessibilidade para garantir a
+                inclusão e a usabilidade do site para todos os usuários.
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Certificado Profissional IBM IT Support
+              </h1>
+              <p class="text-sm">Junh 2023</p>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Certificado Profissional Meta Front-End Developer
+              </h1>
+              <p class="text-sm">Agost 2023</p>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Diploma em Microsoft Excel para Beginners e Experts
+              </h1>
+              <p class="text-sm">Agost 2023</p>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <h1 class="font-bold mt-4">
+                Primeiros Passos no Linux - Conceitos e Principais Comandos
+              </h1>
+              <p class="text-sm">Abr 2020</p>
+            </div>
           </div>
         </div>
-        <div class="mr-[6rem] border-l-[1px] h-screen p-2">
-          <h1 class="font-bold text-xl">Habilidades</h1>
+
+        <div class="mr-[0rem] border-l-[1px] p-2">
+          <h1 class="font-bold text-xl text-[#1E2A3A]">Habilidades</h1>
+
+          <h2 class="mt-4 font-bold">Tecnicas</h2>
+          <ul class="mt-4 flex flex-col gap-2 font-light">
+            <li >Javascript.</li>
+            <li>HTML & CSS.</li>
+            <li>Bootstrap.</li>
+            <li>Tailwind CSS.</li>
+            <li>Vuejs.</li>
+            <li>Mysql.</li>
+          </ul>
+
+          <h2 class="font-bold text-xl text-[#1E2A3A] mt-6 ">Linguas</h2>
+          <ul class="mt-4 flex flex-col gap-2 font-light">
+            <li>Portugues.</li>
+            <li>Ingles.</li>
+          </ul>
+
+          <h2 class="font-bold text-xl text-[#1E2A3A] mt-6 ">Pessoas</h2>
+          <ul class="mt-4 flex flex-col gap-2 font-light">
+            <li>Inovação, criação e Estratégia.</li>
+            <li>Responsabilidade, Flexibilidade e Trabalho em equipa.</li>
+            <li>Boa capacidade de Comunicação e facilidade na aprendizagem.</li>
+          </ul>
+
+          <h2 class="font-bold text-xl text-[#1E2A3A] mt-6 ">Tecnicas</h2>
+          <ul class="mt-4 flex flex-col gap-2 font-light">
+            <li>Instalação, configuração e manutenção de computadores e sistemas de rede.</li>
+            <li>Banco de Dados (MySQL, MongoDB, MS Excel).</li>
+            <li>Sistemas operativos Windows, Windows Server e Linux.</li>
+          </ul>
         </div>
       </div>
     </div>

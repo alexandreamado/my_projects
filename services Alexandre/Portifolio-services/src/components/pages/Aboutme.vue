@@ -4,16 +4,14 @@
       @click="activateMenuItem(0)"
       :class="{ active: activeItem === 0 }"
       class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
-      to="/sobreme"
-    >
+      to="/sobreme">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="w-6 h-6"
-      >
+        class="w-6 h-6">
         <path
           stroke-linecap="round"
           stroke-linejoin="round"
