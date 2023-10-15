@@ -95,7 +95,8 @@
 
       <p class="text-[14px] font-bold">Resumo</p>
     </router-link>
-    <button
+    <router-link
+    to="/contact"
       @click="activateMenuItem(4)"
       :class="{ active: activeItem === 4 }"
       class="transition-all ease-in-out duration-700 flex items-center text-white hover:text-primary gap-2 hover:bg-header p-2 hover:w-full hover:rounded-md"
@@ -116,7 +117,7 @@
       </svg>
 
       <p class="text-[14px] font-bold">Contacto</p>
-    </button>
+    </router-link>
   </div>
 </template>
 
