@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16 flex flex-col gap-4 px-4 ml-8 border-l-[1px] border-white">
+  <div class="mt-16 flex flex-col gap-4 px-4 ml-8 ">
     <router-link
       @click="activateMenuItem(0)"
       :class="{ active: activeItem === 0 }"
